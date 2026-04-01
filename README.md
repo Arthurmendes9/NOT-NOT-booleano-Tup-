@@ -5,7 +5,7 @@
 ![USJT](https://img.shields.io/badge/USJT-3º_Semestre-red.svg?style=flat-square)
 
 ##  Sobre o Projeto
-Um jogo de raciocínio lógico acelerado inspirado no clássico *Not Not*, focado em testar a sua velocidade de interpretação de **Lógica Booleana**. Desenvolvido como projeto acadêmico de programação, design e testes pela nossa equipe de 7 desenvolvedores da Universidade São Judas Tadeu (USJT).
+Um jogo de raciocínio lógico acelerado inspirado no clássico *Not Not*, focado em testar a sua velocidade de interpretação de **Lógica Booleana**. Desenvolvido como projeto acadêmico de Matemática Computacional Aplicada pela nossa equipe de 7 desenvolvedores da Universidade São Judas Tadeu (USJT).
 
 ##  O Jogo
 O cubo vai te dar instruções baseadas em portas lógicas e booleanas (ex: *"Não Esquerda"*, *"Verdadeiro E Falso"*). O jogador tem frações de segundo para processar a lógica e mover para a direção correta antes que o tempo acabe!
@@ -28,6 +28,8 @@ cd NOT-NOT-booleano-Tup-
 pip install -r requirements.txt
 
 # 4. Inicie o jogo
-python src/main.py
+python main.py
+
+```
 
 Desenvolvido pela equipe Tupã Studios.
