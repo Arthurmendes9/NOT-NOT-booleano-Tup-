@@ -1,4 +1,3 @@
-```markdown
 # Guia de Contribuição - Equipe Tupã
 
 Bem-vindo ao guia de desenvolvimento do nosso projeto! Para mantermos o código organizado, livre de bugs e rastreável, **todos os membros devem seguir as regras abaixo.**
@@ -41,26 +40,30 @@ Apenas faça o Merge na main após a revisão e aprovação.
 
 ## 4. Limite de Trabalho (WIP - Work In Progress)
 Para não travar o projeto, temos um limite estrito no Jira:
-* [cite_start]Ninguém pode ter mais de 2 cards em andamento (coluna "In Progress") ao mesmo tempo[cite: 22, 23]. 
-* [cite_start]Termine o seu código atual antes de puxar uma nova tarefa[cite: 23].
+* Ninguém pode ter mais de 2 cards em andamento (coluna "In Progress") ao mesmo tempo. 
+* Termine o seu código atual antes de puxar uma nova tarefa.
 
 ## 5. O Fluxo de Revisão (QA)
 O seu código não vai direto para o jogo principal.
-* [cite_start]Quando terminar a programação, mova o card para a coluna "Em Revisão / QA" no Jira[cite: 24].
-* [cite_start]Ele indica que o trabalho foi feito, mas o Luiz ou o Dias (PM) precisam testar no Pygame[cite: 25].
-* [cite_start]Somente após a aprovação deles o código vai para "Done" e é integrado ao jogo oficial[cite: 26].
+* Quando terminar a programação, mova o card para a coluna "Em Revisão / QA" no Jira.
+* Ele indica que o trabalho foi feito, mas o Luiz ou o Dias (PM) precisam testar no Pygame.
+* Somente após a aprovação deles o código vai para "Done" e é integrado ao jogo oficial.
 
 ## 6. Proibição de Commits "Vazios"
-[cite_start]O histórico do nosso repositório servirá para auditoria[cite: 107].
-* [cite_start]É estritamente proibido criar mensagens de commit vazias ou sem sentido[cite: 106].
-* [cite_start]**NUNCA FAÇA ISSO:** `git commit -m "arrumando coisas"` ou `git commit -m "update"`[cite: 106].
+O histórico do nosso repositório servirá para auditoria[cite: 107].
+* É estritamente proibido criar mensagens de commit vazias ou sem sentido.
+* **NUNCA FAÇA ISSO:** `git commit -m "arrumando coisas"` ou `git commit -m "update"`.
 * Use sempre a Chave do Jira e seja claro sobre o que alterou.
 
 ## 7. Protocolo de Conflitos (Merge Conflict)
-[cite_start]Com 7 pessoas programando juntas, conflitos vão acontecer[cite: 66, 108].
-* [cite_start]Se o GitHub acusar um "Merge Conflict" (duas pessoas alteraram a mesma linha), **não tente forçar a resolução sozinho** se não tiver segurança[cite: 108].
-* [cite_start]Pare o que está fazendo e notifique a gerência do projeto para resolver o conflito juntos, sem perder a lógica de ninguém[cite: 109].
+Com 7 pessoas programando juntas, conflitos vão acontecer.
+* Se o GitHub acusar um "Merge Conflict" (duas pessoas alteraram a mesma linha), **não tente forçar a resolução sozinho** se não tiver segurança.
+* Pare o que está fazendo e notifique a gerência do projeto para resolver o conflito juntos, sem perder a lógica de ninguém.
 
 ## 8. Arquitetura e .gitignore
-* [cite_start]**A Regra do Lixo:** Nossos computadores geram pastas ocultas (`__pycache__` ou `.venv`) que são pesadas e causam conflitos[cite: 102, 103]. [cite_start]O arquivo `.gitignore` bloqueia isso[cite: 104]. [cite_start]Jamais apague ou ignore este arquivo[cite: 105].
-* **Respeite as Pastas:** Siga a estrutura definida. [cite_start]Códigos visuais e do Pygame vão dentro de `src/ui/`[cite: 144]. [cite_start]A "Engine" matemática vai em `src/logic/`[cite: 125, 138]. [cite_start]Músicas e imagens vão em `assets/`[cite: 117].
+* **A Regra do Lixo:** Nossos computadores geram pastas ocultas (`__pycache__` ou `.venv`) que são pesadas e causam conflitos.
+* O arquivo `.gitignore` bloqueia isso. [cite_start]Jamais apague ou ignore este arquivo.
+* **Respeite as Pastas:** Siga a estrutura definida.
+* Códigos visuais e do Pygame vão dentro de `src/ui/`.
+* A "Engine" matemática vai em `src/logic/`.
+* Músicas e imagens vão em `assets/`.
