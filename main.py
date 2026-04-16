@@ -2,6 +2,7 @@ import pygame
 import os     # Padroniza caminhos de arquivos p/ que o jogo rode em qualquer computador sem dar erro de 'Pasta não encontrada'
 import sys    # Biblioteca usada para fechar a janela do jogo
 import logic  # Importa a ponte de lógica que criamos
+import som    # Importa a ponte de som que criamos
 from src.logic.pontuacao import GerenciadorPontuacao 
 from src.ui.cores import * # Para organizar a interface
 from src.ui.menus import exibir_menu_principal, exibir_game_over, exibir_video_intro, obter_botao_clicado, escala_tela
@@ -165,6 +166,7 @@ while True:
 
                 if escolha:
                     if logic.validar_jogada(escolha, desafio["corretas"]):
+                        som.tocar_acerto()
                         sistema_pontos.registrar_acerto()
                         desafio = logic.obter_novo_desafio(sistema_pontos.score)
                         tempo_restante = sistema_pontos.calcular_tempo_limite()
@@ -173,6 +175,7 @@ while True:
                             estado_Atual = REGISTRANDO
                         else:
                             estado_Atual = GAME_OVER
+                            som.tocar_erro()
 
         # GAME OVER
         elif estado_Atual == GAME_OVER:
@@ -227,6 +230,7 @@ while True:
                 estado_Atual = REGISTRANDO
             else:
                 estado_Atual = GAME_OVER
+                som.tocar_erro()
 
     # RENDER
     if estado_Atual == menu:
